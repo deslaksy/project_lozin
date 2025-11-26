@@ -1,4 +1,12 @@
-a, b, c = float(input()), float(input()), float(input())
-print(sorted([a, b, c])[1])
+def safe_input(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Ошибка: введите корректное число!")
 
-React
+a = safe_input("Число A: ")
+b = safe_input("Число B: ")
+c = safe_input("Число C: ")
+
+print(sorted([a, b, c])[1])
