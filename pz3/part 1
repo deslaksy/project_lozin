@@ -1,22 +1,22 @@
 a = input("Введите число A: ")
 try:
-a = float(a)
+    a = float(a)
 except:
-print("Ошибка: это не число!")
-exit()
+    print("Ошибка: это не число!")
+    exit()
 b = input("Введите число B: ")
 try:
-b = float(b)
+    b = float(b)
 except:
-print("Ошибка: это не число!")
-exit()
+    print("Ошибка: это не число!")
+    exit()
 c = input("Введите число C: ")
 try:
-c = float(c)
+    c = float(c)
 except:
-print("Ошибка: это не число!")
-exit()
+    print("Ошибка: это не число!")
+    exit()
 if a > 0 and b > 0 and c > 0:
-print("Все числа положительные!")
+    print("Все числа положительные!")
 else:
-print("Не все числа положительные.")
+    print("Не все числа положительные.")
