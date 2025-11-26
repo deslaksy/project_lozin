@@ -1,0 +1,91 @@
+# Задание 1
+def vert_line(n):
+    i = 0
+    while i < n:
+        print('*')
+        i += 1
+
+def hor_line(n):
+    i = 0
+    while i < n:
+        print('*', end='')
+        i += 1
+    print()
+
+word = input("Введите слово для рамки: ")
+
+length = len(word) + 4
+print("Верхняя граница рамки:")
+hor_line(length)
+print('*', word, '*')
+print("Нижняя граница рамки:")
+hor_line(length)
+
+# Задание 2
+def ShiftLeft3(a, b, c):
+    print(f"До сдвига: A={a}, B={b}, C={c}")
+    temp = a
+    a = c
+    c = b
+    b = temp
+    return a, b, c
+
+print("\n--- Первый набор чисел ---")
+a1 = input("Введите A1: ")
+b1 = input("Введите B1: ")
+c1 = input("Введите C1: ")
+
+while type(a1) != float:
+    try:
+        a1 = float(a1)
+    except ValueError:
+        print("Неправильно ввели!")
+        a1 = input("Введите A1: ")
+
+while type(b1) != float:
+    try:
+        b1 = float(b1)
+    except ValueError:
+        print("Неправильно ввели!")
+        b1 = input("Введите B1: ")
+
+while type(c1) != float:
+    try:
+        c1 = float(c1)
+    except ValueError:
+        print("Неправильно ввели!")
+        c1 = input("Введите C1: ")
+
+a1, b1, c1 = ShiftLeft3(a1, b1, c1)
+print("Результат после левого циклического сдвига:")
+print(f"A1 = {a1}, B1 = {b1}, C1 = {c1}")
+
+print("\n--- Второй набор чисел ---")
+a2 = input("Введите A2: ")
+b2 = input("Введите B2: ")
+c2 = input("Введите C2: ")
+
+while type(a2) != float:
+    try:
+        a2 = float(a2)
+    except ValueError:
+        print("Неправильно ввели!")
+        a2 = input("Введите A2: ")
+
+while type(b2) != float:
+    try:
+        b2 = float(b2)
+    except ValueError:
+        print("Неправильно ввели!")
+        b2 = input("Введите B2: ")
+
+while type(c2) != float:
+    try:
+        c2 = float(c2)
+    except ValueError:
+        print("Неправильно ввели!")
+        c2 = input("Введите C2: ")
+
+a2, b2, c2 = ShiftLeft3(a2, b2, c2)
+print("Результат после левого циклического сдвига:")
+print(f"A2 = {a2}, B2 = {b2}, C2 = {c2}")
