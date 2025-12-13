@@ -1,6 +1,5 @@
 def gorizontal(n, sim):
     print(sim * n)
-
 def ramka(slovo, sim):
     dlina = len(slovo) + 4
     gorizontal(dlina, sim)
