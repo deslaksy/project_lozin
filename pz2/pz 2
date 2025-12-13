@@ -1,14 +1,11 @@
 def get_first_digit():
-try:
-number = int(input("Введите трехзначное число: "))
-if 100 <= number <= 999:
-first_digit = number // 100
-print(f"Первая цифра числа {number}: {first_digit}")
-else:
-print("Ошибка. Число не трехзначное")
-
-except ValueError:
-    print("Ошибка. Введите целое число, не текст")
-    get_first_digit()
+    try:
+        number = int(input("Введите трехзначное число: "))
+        if 100 <= number <= 999:
+            first_digit = number // 100
+            print(f"Первая цифра числа {number}: {first_digit}")
+        else:
+                print("Ошибка. Число не трехзначное")
+    except ValueError:
+        print("Ошибка. Введите целое число, не текст")
 get_first_digit()
-
