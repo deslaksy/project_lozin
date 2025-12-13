@@ -1,4 +1,3 @@
-# Задание 1: рамка
 def gorizontal(n, sim):
     print(sim * n)
 
@@ -7,8 +6,6 @@ def ramka(slovo, sim):
     gorizontal(dlina, sim)
     print(f"{sim} {slovo} {sim}")
     gorizontal(dlina, sim)
-
-# Пример вызова
 slovo = input("Слово: ")
 sim = input("Символ рамки: ")
 ramka(slovo, sim)
