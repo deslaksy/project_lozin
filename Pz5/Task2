@@ -1,0 +1,22 @@
+# Задание 2: сдвиг влево
+def ShiftLeft3(A, B, C):
+    temp = A
+    A = B
+    B = C
+    C = temp
+    return A, B, C
+
+# Пример вызова
+a1 = float(input("A1: "))
+b1 = float(input("B1: "))
+c1 = float(input("C1: "))
+
+a2 = float(input("A2: "))
+b2 = float(input("B2: "))
+c2 = float(input("C2: "))
+
+a1, b1, c1 = ShiftLeft3(a1, b1, c1)
+a2, b2, c2 = ShiftLeft3(a2, b2, c2)
+
+print(f"Первый набор: {a1} {b1} {c1}")
+print(f"Второй набор: {a2} {b2} {c2}")
