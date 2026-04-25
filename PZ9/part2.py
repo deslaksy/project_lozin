@@ -1,3 +1,3 @@
-galereya = {"Чехов","Тютчев","Пушкин",}
-galereya.update(["Грибоедов"])
-print(galereya)
+Galereya = {"Чехов","Тютчев","Пушкин",}
+Galereya.update(["Грибоедов"])
+print(Galereya)
