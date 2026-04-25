@@ -1,14 +1,14 @@
 #в каких магазинах можно одновременно нельзя приобрести книги Достоевского и Пушкина.
-magistr = {"Лермонтов", "Достоевский", "Пушкин", "Тютчев"}
+Magistr = {"Лермонтов", "Достоевский", "Пушкин", "Тютчев"}
 Domknigi = {"Толстой", "Грибоедов", "Чехов", "Пушкин"}
 BookMarket = {"Пушкин", "Достоевский", "Маяковский"}
-galereya = {"Чехов", "Тютчев", "Пушкин"}
-authors = {"Достоевский", "Пушкин"}
-if magistr&authors == authors:
+Galereya = {"Чехов", "Тютчев", "Пушкин"}
+Authors = {"Достоевский", "Пушкин"}
+if Magistr&Authors == Authors:
     print ("Магистр")
-if Domknigi&authors == authors:
+if Domknigi&Authors == Authors:
       print("ДомКниги")
-if BookMarket&authors == authors:
+if BookMarket&Authors == Authors:
       print("БукМаркет")
-if galereya&authors == authors:
+if Galereya&Authors == Authors:
       print("Галерея")
