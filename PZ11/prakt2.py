@@ -3,6 +3,5 @@ def digits_gen(s):
     for ch in s:
         if ch.isdigit():
             yield ch
-#Пример
-text = "my years of 23"
-print('Цифры:',''.join(digits_gen(text)))
+text = input('Введите строку:')
+print ('Цифры', ''.join(digits_gen(text)))
