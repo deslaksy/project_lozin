@@ -1,4 +1,5 @@
-# Создаём словарь
 d = {'a': 1, 'b': 2}
+print("Исходный словарь:", d)
 keys_list = list(d.keys())
-print(keys_list)
+print("Ключи :",keys_list)
+print("\n")
