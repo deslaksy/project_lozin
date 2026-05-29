@@ -1,5 +1,5 @@
 #Создаём исходный файл с числами
-numbers = [3, -5, 7, -2, 9, -8, 4]  # Пример последовательности
+numbers = [3, -5, 7, -2, 9, -8, 4]  
 with open('input.txt', 'w') as file:
     for num in numbers:
         file.write(f"{num} ")
