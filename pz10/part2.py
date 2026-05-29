@@ -1,7 +1,7 @@
 spaces = 0
 
 # вывод и подсчет пробелов
-for line in open('stih.txt', encoding='UTF-8'):
+for line in open('text18-14.txt', encoding='UTF-8'):
     print(line, end='')
     for ch in line:
         if ch == ' ':
@@ -10,7 +10,7 @@ for line in open('stih.txt', encoding='UTF-8'):
 print('\nКоличество пробелов:', spaces)
 
 # читаем строки
-f1 = open('stih.txt', encoding='UTF-8')
+f1 = open('text18-14.txt', encoding='UTF-8')
 l = f1.readlines()
 f1.close()
 
