@@ -9,9 +9,9 @@ with open('input.txt', 'r') as file:
     numbers = [int(x) for x in data]
 
 # Вычисляем требуемые значения
-count = len(numbers)  # Количество элементов
-min_value = min(numbers)  # Минимальное значение
-min_index = numbers.index(min_value)  # Индекс первого минимального элемента
+count = len(numbers) 
+min_value = min(numbers)  
+min_index = numbers.index(min_value) 
 
 # Умножаем все элементы на минимальный элемент
 processed_numbers = [num * min_value for num in numbers]
