@@ -5,4 +5,4 @@ print('A:',A)
 B = [x for x in A if x > 0 ]
 C = [x for x in A if x < 0 ]
 print ('Положительные:',B,'Количество',len(B))
-print ('Отрицательные:',B,'Количество',len(C))
+print ('Отрицательные:',C,'Количество',len(C))
