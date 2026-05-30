@@ -16,4 +16,4 @@ for i, p in enumerate(phones, 1):
 new_text = re.sub(r"(Горячая линия)", r"\1 Министерства образования Ростовской области", text)
 with open("hotline1_new.txt", "w", encoding="utf-8") as f:
     f.write(new_text)
-print("Задание 2. Результат сохранен в файл hotline1_new.txt")
+print("Результат сохранен в файле hotline1_new.txt")
