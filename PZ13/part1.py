@@ -4,9 +4,7 @@ with open("hotline1.txt", "r", encoding="utf-8") as f:
     text = f.read()
 # Задание 1: поиск номеров по шаблону 8(000)000-00-00
 phones = re.findall(r"8\(\d{3}\)\d{3}-\d{2}-\d{2}", text)
-print("=" * 60)
 print("Задание 1. Поиск номеров телефонов 8(000)000-00-00")
-print("=" * 60)
 print(f"Найдено номеров: {len(phones)}")
 print("Найденные номера:")
 for i, p in enumerate(phones, 1):
