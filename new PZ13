@@ -1,0 +1,26 @@
+import re
+
+# В исходном текстовом файле(notline1.txt) найти все номера телефонов, 
+# соответствующих шаблону 8(000)000-00-00. Посчитать количество полученных элементов.
+
+# Чтение исходного файла
+try:
+    with open("notline1.txt", "r", encoding="utf-8") as f:
+        text = f.read()
+except FileNotFoundError:
+    print("Ошибка: файл notline1.txt не найден!")
+    print("Проверьте, что файл находится в той же папке, что и программа.")
+    exit()
+
+# Задание 1: поиск номеров по шаблону 8(000)000-00-00
+phones = re.findall(r"8\(\d{3}\)\d{3}-\d{2}-\d{2}", text)
+print("Задание 1. Поиск номеров телефонов 8(000)000-00-00")
+print(f"Найдено номеров: {len(phones)}")
+for i, p in enumerate(phones, 1):
+    print(f"{i}. {p}")
+
+# Задание 2: добавление фразы и запись в новый файл
+new_text = re.sub(r"(Горячая линия)", r"\1 Министерства образования Ростовской области", text)
+with open("notline1_new.txt", "w", encoding="utf-8") as f:
+    f.write(new_text)
+print("Результат сохранения в файле notline1_new.txt")
