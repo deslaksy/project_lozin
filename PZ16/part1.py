@@ -12,7 +12,7 @@ class Car:
 
 
 if __name__ == "__main__":
-    # Добавлено 5 вариантов машин
+    # Добавлены варианты машин
     car1 = Car("Toyota", "Camry", 2020)
     car2 = Car("Lada", "Vesta", 2023)
     car3 = Car("BMW", "M5", 2021)
